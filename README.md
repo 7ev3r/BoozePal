@@ -66,8 +66,18 @@ img -
 img -
 
 ## Initial Models
-- to be continued
+
+Using Google Colab notebook
+
+https://github.com/7ev3r/Midterm_assignment_v2/blob/d6806a113699a518bcd3b0573d9b4a3cc8263724/Train_ML_model.ipynb
+
+*somehow cant use Surprise as Python scikit for building and analyzing recommender systems that deal with explicit rating data in VS Code
+
+- Compared different models with Surprise. 
+- SVD, KNN_Basic,KNN_Baseline. 
+- Results of all 3 models were close with a RMSE around 1.8 
 
 ## Conclusion
 
-BoozePal recommends whiskies by user budget after evaluation - 3 whiskies. Throughout the entire process, our system is BoozePal provides URL links to give additional information in case the user decides to get more information about recomendet bottle of whiskey 
+- BoozePal recommends whiskies by user budget after evaluation.
+- BoozePal also provides URL links to give additional information , in case the user decides to get more information about recomendet whiskey 

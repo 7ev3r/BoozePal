@@ -34,7 +34,7 @@ Result :
 
 *looks good , moving forward
 
-## Running local MySQL server and uploading data from .csv to created DB
+## Running local MySQL server and uploading data from .csv to created scraped DB
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/XAMMP_mysql_server.jpeg)
 
@@ -56,19 +56,21 @@ After consolidation the datasets and removing NaN values/duplicates, checking ho
 
 *final dataframe has 1009 unique users, 463 unique whiskies, and 37567 total reviews
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
+![image width="500" height="400"](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
 
 Most of the users rated the whiskies fairly highly as a majority of reviews range from mid 80's to 100. 
 *because whiskies are part of the top 1000 rated whiskies.
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/Ratings.jpeg)
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Ratings.png)
 
 Majority of users reviewed many different types of whiskies
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/Users_reviewed.jpeg)
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_IDs.png)
 
-![image]()
-![image]()
+Users reviewed many different types of whiskies. To have enough data points to leverage, checking ones who have over 5 reviews in total
+
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_WID.png)
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_count_IDs.png)
 
 ## Initial Models
 
@@ -79,10 +81,10 @@ Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RP
 *somehow cant use Surprise as Python scikit for building and analyzing recommender systems that deal with explicit rating data in VS Code
 
 - Compared different models with Surprise : SVD, KNN_Basic,KNN_Baseline
+*Results of all 3 models were close with a RMSE around 1.8
 - Testing the model
-- Getting result : notperfect but working BoozePal
+- Getting result : not perfect but working! **BoozePal**
 
-Results of all 3 models were close with a RMSE around 1.8 
 
 ## Conclusion
 

@@ -19,8 +19,8 @@ Using Selenium and BeautifulSoup to log in and to grab the necessary data :
 
 Adding the data to a dataframe and moving to a csv's
 
-Result :
-**Whiskey_New_Release_Data.csv**
+Result :  
+**Whiskey_New_Release_Data.csv**  
 **Whiskey_Top_1000_Data.csv**
 
 ## Data clean :
@@ -29,7 +29,7 @@ Result :
 
 Consolidating the datasets and remove NaN values/duplicates , moving to a csv
 
-Result :
+Result :  
 **Clean_whiskey_data.csv**
 
 *looks good , moving forward

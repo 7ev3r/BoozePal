@@ -1,9 +1,9 @@
 # **BoozePal**
-
+for ![image](https://www.whiskybase.com/images/logos/default@2x.png)
 ## Overview
 
 Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best whiskey for user. 
-Using Whiskeybase.com for top 1000 rated whiskies and newly released to get : user ratings, user names, and the whiskeys to build BoozePal.
+Using [Whiskeybase.com](https://www.whiskybase.com) for [top 1000](https://www.whiskybase.com/whiskies/top1000) rated whiskies and [newly released](https://www.whiskybase.com/whiskies/new-releases) to get : user ratings, user names, and the whiskeys to build BoozePal.
 
 *Please see below for how **BoozePal** works.
 

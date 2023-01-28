@@ -83,8 +83,9 @@ Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RP
 - Compared different models with Surprise : SVD, KNN_Basic,KNN_Baseline
 *Results of all 3 models were close with a RMSE around 1.8
 - Testing the model
-- Getting result : not perfect but working! **BoozePal**
+- Getting result : not perfect but working! **BoozePal**   
 
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/807fde58d774d3384a94881c29f911ee2babab40/Images/Recomendation_1.png)
 
 ## Conclusion
 

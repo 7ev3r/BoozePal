@@ -2,7 +2,7 @@
 
 ## Overview
 
-Goal of this project is to build "BoozePal" and help to pick best whiskey for searcher. 
+Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best whiskey for customer. 
 Using Whiskeybase.com for top 1000 rated whiskies and newly released to get : user ratings, user names, and the whiskeys to build BoozePal. Please see below for how our recommender system works.
 
 ## Initial EDA

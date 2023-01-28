@@ -2,8 +2,10 @@
 
 ## Overview
 
-Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best whiskey for customer. 
-Using Whiskeybase.com for top 1000 rated whiskies and newly released to get : user ratings, user names, and the whiskeys to build BoozePal. Please see below for how our recommender system works.
+Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best whiskey for user. 
+Using Whiskeybase.com for top 1000 rated whiskies and newly released to get : user ratings, user names, and the whiskeys to build BoozePal.
+
+*Please see below for how BoozePal works.
 
 ## Scraper:
 
@@ -14,8 +16,9 @@ Using Selenium and BeautifulSoup we log in and grab the necessary data through s
 - the ratings provided by the users
 - the price from a specific whiskey product webpage
 - the url links for each whiskey page
-- adding the data to a dataframe and moving to a csv's :
+- adding the data to a dataframe and moving to a csv's
 
+Result :
 Whiskey_New_Release_Data.csv
 Whiskey_Top_1000_Data.csv
 
@@ -23,8 +26,9 @@ Whiskey_Top_1000_Data.csv
 
 https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/cleaning_data%20.ipynb
 
-- consolidation the datasets and removing NaN values/duplicates , moving to a csv : 
+- consolidation the datasets and removing NaN values/duplicates , moving to a csv
 
+Result :
 Clean_whiskey_data.csv
 
 - looks good , moving forward
@@ -54,7 +58,7 @@ https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d
 https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg
 
 Most of the users rated the whiskies fairly highly as a majority of reviews range from mid 80's to 100. 
-Mostly because whiskies are part of the top 1000 rated whiskies.
+*because whiskies are part of the top 1000 rated whiskies.
 
 https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/Ratings.jpeg
 

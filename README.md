@@ -45,6 +45,7 @@ Checking with MySQL Workbech table content
 *looks good , moving forward
 
 
+
 ## Initial EDA
 
 After consolidation the datasets and removing NaN values/duplicates, checking how the users were rating the whiskies :

@@ -34,7 +34,7 @@ Result :
 
 *looks good , moving forward
 
-## Running local MySQL server and uploading data from .csv to created scraped DB
+## Running local MySQL server and uploading data from .csv to created db
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/XAMMP_mysql_server.jpeg)
 
@@ -44,7 +44,9 @@ Checking with MySQL Workbech table content
 
 *looks good , moving forward
 
+## Connecting to local MySQL server and getting data from db
 
+[connect_to_db.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/956eae7ea01389d105892228d439c7204b0cece5/connect_to_db.ipynb)
 
 ## Initial EDA
 

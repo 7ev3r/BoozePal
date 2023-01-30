@@ -48,6 +48,8 @@ Checking with MySQL Workbech table content
 
 [connect_to_db.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/956eae7ea01389d105892228d439c7204b0cece5/connect_to_db.ipynb)
 
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/9e119b5f0a6458b92636a6191704eac63f4f909d/Images/connected_to_db.png)
+
 ## Initial EDA
 
 After consolidation the datasets and removing NaN values/duplicates, checking how the users were rating the whiskies :

@@ -2,8 +2,8 @@
 for ![image](https://www.whiskybase.com/images/logos/default@2x.png)
 ## Overview
 
-Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best whiskey for user. 
-Using [Whiskeybase.com](https://www.whiskybase.com) for [top 1000](https://www.whiskybase.com/whiskies/top1000) rated whiskies and [newly released](https://www.whiskybase.com/whiskies/new-releases) to get : user ratings, user names, and the whiskeys to build BoozePal.
+Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best "drink" for you.
+Using [Whiskeybase.com](https://www.whiskybase.com) for [top 1000](https://www.whiskybase.com/whiskies/top1000) rated whiskies and [newly released](https://www.whiskybase.com/whiskies/new-releases) to get : user ratings, user names, and the whiskeys to build BoozePal DB.
 
 *Please see below for how **BoozePal** works.
 
@@ -44,9 +44,6 @@ Checking with MySQL Workbech table content
 
 *looks good , moving forward
 
-## Creating an API
-
-*not done yet ! sorry
 
 ## Initial EDA
 
@@ -67,7 +64,7 @@ Majority of users reviewed many different types of whiskies
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_IDs.png)
 
-Users reviewed many different types of whiskies. To have enough data points to leverage, checking ones who have over 5 reviews in total
+To have enough data points to leverage, checking ones who have over 5 reviews in total
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_WID.png)
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_count_IDs.png)
@@ -89,5 +86,5 @@ Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RP
 
 ## Conclusion
 
-- **BoozePal** recommends whiskies by user budget after evaluation.
-- **BoozePal** also provides URL links to give additional information , in case the user decides to get more information about recomendet whiskey 
+- **BoozePal**  Selects whiskey for you ! according to the specified budget and after your evaluation of the proposed options from the list of highly rated drinks by site visitors
+- **BoozePal** also provides URL links to give additional information , in case you decide to get more detailed information about recomendet drink

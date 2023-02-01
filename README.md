@@ -2,8 +2,8 @@
 for ![image](https://www.whiskybase.com/images/logos/default@2x.png)
 ## Overview
 
-Goal of this project is to build "BoozePal" (assistant in choosing) and help to pick best "drink" for you.
-Using [Whiskeybase.com](https://www.whiskybase.com) for [top 1000](https://www.whiskybase.com/whiskies/top1000) rated whiskies and [newly released](https://www.whiskybase.com/whiskies/new-releases) to get : user ratings, user names, and the whiskeys to build BoozePal DB.
+Goal of this project is to build **BoozePal** (assistant in choosing) and help to pick best "drink" for you.
+Using [Whiskeybase.com](https://www.whiskybase.com) for [top 1000](https://www.whiskybase.com/whiskies/top1000) rated whiskies and [released/bottled in 2022](https://www.whiskybase.com/whiskies/new-releases) to get : user ratings, user names, and the whiskeys to build df for **BoozePal**
 
 *Please see below for how **BoozePal** works.
 
@@ -20,17 +20,23 @@ Using Selenium and BeautifulSoup to log in and to grab the necessary data :
 Adding the data to a dataframe and moving to a csv's
 
 Result :  
-**Whiskey_New_Release_Data.csv**  
+**Whiskey_Released_in_2022_Data.csv**  
 **Whiskey_Top_1000_Data.csv**
 
 ## Data clean :
 
-[cleaning_data .ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/cleaning_data%20.ipynb)
+[cleaning_data.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/cleaning_data%20.ipynb)
 
-Consolidating the datasets and remove NaN values/duplicates , moving to a csv
+Consolidating the datasets and remove NaN values/duplicates ,
+filterirn users with more than 5 reviews,
+moving to a csv
+
+![image](Images/Rating_count.png)
 
 Result :  
 **Clean_whiskey_data.csv**
+
+Mostly with only highly rated whiskeys
 
 *looks good , moving forward
 
@@ -52,27 +58,34 @@ Checking with MySQL Workbech table content
 
 ## Initial EDA
 
-After consolidation the datasets and removing NaN values/duplicates, checking how the users were rating the whiskies :
+After consolidation the datasets and removing duplicates, checking how the users were rating the whiskies :
 
 [EDA.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/EDA.ipynb)
 
-*dataframe has : 2393 unique users, 2718 unique whiskies, and 67744 reviews.
+*dataframe has : 
+Reviews : 33304  
+Unique Users count : 2519  
+Unique Whiskey_ID's : 2294  
 
 ![image width="500" height="400"](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
 
-Most of the users rated the whiskies prety high ,reviews range from mid 85's to 100. 
-*because most whiskies are part of the top rated whiskies, so they highly rated. 
+Most of the users rated the whiskies prety high ,reviews range from mid 80's to 100. 
+*whiskies are part of the top rated whiskies list
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Ratings.png)
+![image](Images/Ratings.png)
 
-Most of users reviewed many different types of whiskies , very active guys :)
+Most of users reviewed many different types of whiskies , *very active ppl :)
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_IDs.png)
+![image]Images/Num_of_Reviews_by_IDs.png)
 
 To have enough data points to leverage, checking ones who have over 5 reviews in total
 
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_WID.png)
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_count_IDs.png)
+![image](Images/Num_of_Reviews_by_WID.png)
+![image](Images/Num_of_Reviews_by_count_IDs.png)
+
+Price range allows to find something for "every pocket"
+
+![image](Images/Price_range.png)
 
 ## Initial Models
 
@@ -83,7 +96,7 @@ Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RP
 *somehow cant use Surprise as Python scikit for building and analyzing recommender systems that deal with explicit rating data in VS Code
 
 - Compared different models with Surprise : SVD, KNN_Basic,KNN_Baseline
-*Results of all 3 models were close with a RMSE around 1.8
+*Results of all 3 models were close with a RMSE around 2.8
 - Testing the model
 - Getting result : not perfect but working! **BoozePal**   
 

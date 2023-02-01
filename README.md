@@ -56,16 +56,16 @@ After consolidation the datasets and removing NaN values/duplicates, checking ho
 
 [EDA.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/EDA.ipynb)
 
-*final dataframe has 1009 unique users, 463 unique whiskies, and 37567 total reviews
+*dataframe has : 2393 unique users, 2718 unique whiskies, and 67744 reviews.
 
 ![image width="500" height="400"](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
 
-Most of the users rated the whiskies fairly highly as a majority of reviews range from mid 80's to 100. 
-*because whiskies are part of the top 1000 rated whiskies.
+Most of the users rated the whiskies prety high ,reviews range from mid 85's to 100. 
+*because most whiskies are part of the top rated whiskies, so they highly rated. 
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Ratings.png)
 
-Majority of users reviewed many different types of whiskies
+Most of users reviewed many different types of whiskies , very active guys :)
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/be5d36c8a01d5fc2d564a94a7a2a77f67240d2cf/Images/Num_of_Reviews_by_IDs.png)
 

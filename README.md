@@ -80,50 +80,50 @@ Checking with MySQL Workbech table content
 
 ## Initial EDA
 
+[EDA.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/EDA.ipynb)
+
 In this script, we are loading the cleaned whiskey data from 'Clean_whiskey_data.csv' and using Seaborn to create various visualizations to analyze the dataset. Below is a summary of each step in the script:
 
 1. Import the necessary libraries: pandas and seaborn.
 2. Read the 'Clean_whiskey_data.csv' file and store it in a DataFrame df.
 3. Drop the 'Unnamed: 0' column, which is an unnecessary index column.
 4. Print the total number of reviews, unique users, and unique whiskey IDs in the dataset.
-5. Display a random sample of 3 rows from the DataFrame.
-6. Create a countplot of the 'rating' column, showing the distribution of ratings.
-7. Create a countplot of the 'User_ID' column, showing the distribution of user review counts.
-8. Create a histogram of the number of reviews per whiskey, with a bin size of 500.
-9. Create a histogram of the number of reviews per user, with a bin size of 500.
-10. Create a countplot of the 'price_euros' column, showing the distribution of whiskey prices.
+
+*dataframe has : 
+Reviews : 33304  
+Unique Users count : 2519  
+Unique Whiskey_ID's : 2294
+
+6. Display a random sample of 5 rows from the DataFrame.
+
+![image width="500" height="400"](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
+
+8. Create a countplot of the 'rating' column, showing the distribution of ratings.
+
+![image](Images/Ratings.png)
+
+10. Create a countplot of the 'User_ID' column, showing the distribution of user review counts.
+
+![image]Images/Num_of_Reviews_by_IDs.png)
+
+12. Create a histogram of the number of reviews per whiskey, with a bin size of 500.
+
+![image](Images/Num_of_Reviews_by_WID.png)
+
+14. Create a histogram of the number of reviews per user, with a bin size of 500.
+
+![image](Images/Num_of_Reviews_by_count_IDs.png)
+
+16. Create a countplot of the 'price_euros' column, showing the distribution of whiskey prices.
+
+![image](Images/Price_range.png)
+
 The script generates a number of plots that provide insights into the whiskey data. For example, we can see that most whiskies have high ratings, ranging from the mid-80s to 100. This is because the dataset mostly consists of top-rated whiskies.
 
 Additionally, the plots show that most users have reviewed many different types of whiskies, and the histograms for the number of reviews per whiskey and per user give a sense of how the data is distributed.
 
 Lastly, the countplot for the 'price_euros' column shows the distribution of whiskey prices in the dataset, allowing you to see how prices vary across different whiskies.
 
-[EDA.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/EDA.ipynb)
-
-*dataframe has : 
-Reviews : 33304  
-Unique Users count : 2519  
-Unique Whiskey_ID's : 2294  
-
-![image width="500" height="400"](https://github.com/7ev3r/Midterm_assignment_v2/blob/742bc3a1980443d46c188bf2093d426414c8c162/Images/df_screen.jpeg)
-
-Most of the users rated the whiskies prety high ,reviews range from mid 80's to 100. 
-*whiskies are part of the top rated whiskies list
-
-![image](Images/Ratings.png)
-
-Most of users reviewed many different types of whiskies , *very active ppl :)
-
-![image]Images/Num_of_Reviews_by_IDs.png)
-
-To have enough data points to leverage, checking ones who have over 5 reviews in total
-
-![image](Images/Num_of_Reviews_by_WID.png)
-![image](Images/Num_of_Reviews_by_count_IDs.png)
-
-Price range allows to find something for "every pocket"
-
-![image](Images/Price_range.png)
 
 ## Initial Models
 
@@ -133,14 +133,7 @@ Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RP
 
 *somehow cant use Surprise as Python scikit for building and analyzing recommender systems that deal with explicit rating data in VS Code
 
-- Compared different models with Surprise : SVD, KNN_Basic,KNN_Baseline
-*Results of all 3 models were close with a RMSE around 2.8
-- Testing the model
-- Getting result : not perfect but working! **BoozePal**   
-
-![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/807fde58d774d3384a94881c29f911ee2babab40/Images/Recomendation_1.png)
-
-This code provides a whiskey recommendation system called BoozePal. It's based on the Collaborative Filtering technique using the Surprise library for recommender systems. The code reads a dataset of whiskey ratings and prices, and then it prompts users to rate a few randomly-selected whiskies. Based on these ratings and the user's budget, BoozePal provides personalized whiskey recommendations.
+This code provides a whiskey recommendation system called BoozePal. It's based on the Collaborative Filtering technique using the Surprise library for recommender systems. The code reads a dataset of whiskey ratings and prices, and then it prompts user to rate a few randomly-selected whiskies. Based on these ratings and the user's budget, BoozePal provides personalized whiskey recommendations.
 
 Here is a brief explanation of the main sections in the code:
 
@@ -152,10 +145,12 @@ Here is a brief explanation of the main sections in the code:
 6. Define the BoozePal function, which prompts the user for the number of recommendations, budget, and whiskey ratings, then calls the find_booze function to provide personalized recommendations.
 7. Call the BoozePal function with the dataset and the number of whiskies the user should rate.
 
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/807fde58d774d3384a94881c29f911ee2babab40/Images/Recomendation_1.png)
+
 In the provided example, the user rates 5 whiskies and asks for 5 recommendations with a budget of 80 euros. The system then provides 5 personalized whiskey recommendations based on the user's preferences and budget.
 
 
 ## Conclusion
 
-- **BoozePal**  Selects whiskey for you ! according to the specified budget and after your evaluation of the proposed options from the list of highly rated drinks by site visitors
-- **BoozePal** also provides URL links to give additional information , in case you decide to get more detailed information about recomendet drink
+- **BoozePal** whiskey recommendation system provides personalized whiskey suggestions based on user preferences and budget. It leverages collaborative filtering techniques and the Surprise library to make predictions on user-item ratings. The system prompts users to rate a few whiskies and input their budget, then it offers recommendations tailored to their preferences within their specified price range. This solution can be valuable for whiskey enthusiasts looking for new bottles to try or for those who want to find a suitable gift for a whiskey lover within a certain budget. It demonstrates the practical application of recommender systems in the context of the whiskey market.
+- **BoozePal** also provides URL links to give additional information , in case you decide to get more detailed information about recomendet drink.

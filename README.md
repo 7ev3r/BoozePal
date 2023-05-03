@@ -104,7 +104,7 @@ Unique Whiskey_ID's : 2294
 
 10. Create a countplot of the 'User_ID' column, showing the distribution of user review counts.
 
-![image]Images/Num_of_Reviews_by_IDs.png)
+![image](Images/Num_of_Reviews_by_IDs.png)
 
 12. Create a histogram of the number of reviews per whiskey, with a bin size of 500.
 

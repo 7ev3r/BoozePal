@@ -127,9 +127,9 @@ Lastly, the countplot for the 'price_euros' column shows the distribution of whi
 
 ## Initial Models
 
-Using [Google Colab](https://colab.research.google.com/drive/1ePdNEIjuDbF8JMM9RPl9X-yOfEBSdxp0#scrollTo=t7MW5F3WghyP) notebook :
+Using [Google Colab](https://colab.research.google.com/drive/1D_bPgani_4glpsPrahdqbd-BbIJcDeaR?usp=sharing) notebook :
 
-[Train_ML_model.ipynb](https://github.com/7ev3r/Midterm_assignment_v2/blob/d6806a113699a518bcd3b0573d9b4a3cc8263724/Train_ML_model.ipynb)
+[Train_ML_model_new.ipynb](Train_ML_model_new.ipynb)
 
 *somehow cant use Surprise as Python scikit for building and analyzing recommender systems that deal with explicit rating data in VS Code
 
@@ -140,10 +140,14 @@ Here is a brief explanation of the main sections in the code:
 1. Import necessary libraries and read the whiskey dataset.
 2. Preprocess the dataset to obtain the necessary columns for the recommendation system.
 3. Test the SVD algorithm from the Surprise library on a train-test split and calculate the root-mean-square error (RMSE).
-4. Define the test_pal function to test the prediction of a single user-item rating.
-5. Define the find_booze function to find whiskey recommendations based on the user's input ratings and budget.
-6. Define the BoozePal function, which prompts the user for the number of recommendations, budget, and whiskey ratings, then calls the find_booze function to provide personalized recommendations.
-7. Call the BoozePal function with the dataset and the number of whiskies the user should rate.
+4. creating a custom cross-validation function custom_cross_validate to store the RMSE values for each fold in the cross-validation process. Then, it plots the accuracy (RMSE) curve for the validation set across the folds, along with the mean RMSE.
+
+![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/29405013c05c9d043136e4ec8be6cd5725a0b245/Images/RMSE%20curve.png)
+
+6. Define the test_pal function to test the prediction of a single user-item rating.
+7. Define the find_booze function to find whiskey recommendations based on the user's input ratings and budget.
+8. Define the BoozePal function, which prompts the user for the number of recommendations, budget, and whiskey ratings, then calls the find_booze function to provide personalized recommendations.
+9. Call the BoozePal function with the dataset and the number of whiskies the user should rate.
 
 ![image](https://github.com/7ev3r/Midterm_assignment_v2/blob/807fde58d774d3384a94881c29f911ee2babab40/Images/Recomendation_1.png)
 
